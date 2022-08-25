@@ -1,17 +1,21 @@
 # WeatherFusion ©️
 
-weather app built with node js, express and ejs templates
+WeatherFusion©️ has been developed using Node.js, Express.js and ejs templates fully.
+
+Weather freaks can convert temperature between celsius and farenheit, and furthermore also input a wind speed to obtain a real Wind Chill Temperature
+
 
 
 To run the app, download the zip file, go to the folder and then run
+By using this command, all your dependecies will automatically installed.
 ```bash
 npm install
 ```
-By using this command, all your dependecies will automatically installed.
+This following command would allow the app to run on localhost 3000 (local server)
 ```bash
     node app.js
 ```
-This app will run on localhost 3000
+
 
 ## Landing page
 
