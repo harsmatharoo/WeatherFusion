@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.body{
+    /* background-color: #82DBD8; */ 
+    background-image: linear-gradient(to bottom right, #B3E8E5, #2F8F9D);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 15vh 0;
+    text-align: center;
+}
+
+.content{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #2F8F9D;
+    margin: 0 30px;
+    padding: 60px 20px;
+}
+
+form div{
+    margin: 0 0 20px;
+}
+
+.footer{
+    margin: 40px 0;
+}
+.footer p{
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.headingMain{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 0 0 30px;
+    text-shadow: 1px 1px 1px #2F8F9D;
+}
+
+.inputCity input{
+    border: none;
+    border-bottom: #2F8F9D 2px solid;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    max-width: 200px;
+    padding: 4px;
+}
+.inputSearch input{
+    background-color: #3BACB6;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px #82DBD8;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+.inputSearch input:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.searchForm{
+    padding: 40px 0 0;
+}
+.searchForm input{
+    display: inline-block;
+}
+
+.subHeading{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/*
+    Weather card CSS
+*/
+
+.weatherCard{
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px grey;
+    /* box-shadow: 0px 0px 15px #2F8F9D; */
+    display: inline-flex;
+    margin: 15px 5px;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.left{
+    padding: 15px 20px;
+    text-align: center;
+    width: 30%;
+}
+.right{
+    width: 70%;
+}
+
+.left ul{
+    font-size: 1.2rem;
+    list-style-type: none;
+    margin: 10px 0 0;
+}
+
+.cityImage{
+    min-height: 100%;
+    width: 100%;
+}
+.weatherIcon{
+    min-width: 25%;
+}

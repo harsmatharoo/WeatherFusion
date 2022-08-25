@@ -1,0 +1,22 @@
+<%- include("header"); -%>
+<link rel="stylesheet" href="css/index.css">
+<%- include("header2"); -%>
+    <div class="loginContent">
+            <h1 class="headingMain">My Weather</h1>
+            <div class="loginWindow">    
+                <h3 class="subHeading">Please, tell us your name:</h3>
+                <form class="loginForm" action="/" method="post" onsubmit="submitForm(event)">
+                    <div class="inputName"><input type="text" name="userName" placeholder="Your Name" autocomplete="off" autofocus></div>
+                    <div class="inputConfirm"><input type="submit" name="submit" value="Confirm"></div>
+                    <p class="or">or</p>
+                    <div class="inputAnonym"><input type="submit" name="submit" value="Continue anonymously"></div>
+                    <img class="weather-icon" src="/images/weather-icon.png" alt="weather icon">  
+                </form>
+            </div>
+            <div class="footer">
+                <p>Created by Matúš Vranka</p>
+                <p>2022</p>
+            </div>
+        </div>
+        <script src="scripts/index.js"></script>
+<%- include("footer"); -%>

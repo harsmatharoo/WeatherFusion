@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.body{
+    /* background-color: #82DBD8; */ 
+    background-image: linear-gradient(to bottom right, #B3E8E5, #2F8F9D);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.footer{
+    margin: 40px 0;
+}
+.footer p{
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+form div{
+    margin: 0 0 20px;
+}
+
+.headingMain{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    font-weight: 700;
+    padding: 0 0 30px;
+    text-shadow: 2px 2px 2px #2F8F9D;
+}
+
+.inputName input{
+    border: none;
+    border-bottom: #2F8F9D 2px solid;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    max-width: 200px;
+    padding: 4px;
+}
+.inputConfirm input{
+    background-color: #3BACB6;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px #82DBD8;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+.inputConfirm input:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.inputAnonym input{
+    background-color: white;
+    border: none;
+    color: #2F8F9D;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.inputAnonym input:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.loginContent{
+    margin: 0 auto;
+    max-width: 450px;
+    padding: 15vh 0;
+    text-align: center;
+}
+
+.loginForm{
+    padding: 40px 0 0;
+}
+.loginForm input{
+    display: inline-block;
+}
+
+
+.loginWindow{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #2F8F9D;
+    padding: 60px 20px;
+}
+
+.or{
+    margin: -10px 0 10px;
+}
+
+.subHeading{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.weather-icon{
+    height: 50px;
+    width: 50px;
+}

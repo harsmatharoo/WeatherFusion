@@ -1,0 +1,51 @@
+<%- include("header"); -%>
+<link rel="stylesheet" href="css/home.css">
+<%- include("header2"); -%>
+    <div class="container">
+        <h1 class="headingMain">Welcome <%= firstName %></h1>
+        <div class="dateTime">
+            <h2 id="date"></h2>
+            <h2 id="dayOfWeek"></h2>
+            <h3></h3>
+        </div>
+        <div class="content">
+            <h3 class="subHeading">Search for city:</h3>
+            <form class="searchForm" action="/home" method="post" onsubmit="validateCity(event)">
+                <div class="inputCity"><input type="text" name="cityName" placeholder="City Name" autocomplete="off" autofocus></div>
+                <div class="inputSearch"><input type="submit" name="search" value="Search"></div>
+            </form>
+            <% if(error){ %>
+                <p> <%= errorText %> </p>
+            <% } %>
+            <% for (let i=dataLength; i>0; i--){ %>
+                <div class="weatherCard">
+                    <div class="left">
+                        <img class="weatherIcon" src="<%= data[i - 1].icon %>" alt="Weather Icon">
+                        <h1>
+                            <%= data[i - 1].city %>
+                        </h1>
+                        <ul>
+                            <li>
+                                <%= data[i - 1].temperature %>
+                            </li>
+                            <li>
+                                <%= data[i - 1].descShort %>
+                            </li>
+                            <li>
+                                <%= data[i - 1].descLong %>
+                            </li> 
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <img class="cityImage" src="<%= data[i - 1].imageURL%>" alt="City image">
+                    </div>
+                </div>
+            <% } %>
+        </div>
+        <div class="footer">
+            <p>Created by Matúš Vranka</p>
+            <p>2022</p>
+        </div>
+    </div>
+    <script src="scripts/home.js"></script>
+<%- include("footer"); -%>
