@@ -37,3 +37,4 @@ This app checks if input city is valid city name ( f.e. does not contain numbers
 
 #### This app was created to better understand how back-end and node js works, because it is often used with React
 
+![Screenshot from 2022-08-16 00-32-38](https://user-images.githubusercontent.com/84873873/186787336-35310d4e-cc1e-4b15-b632-e04d6d593ef4.png)
