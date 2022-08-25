@@ -4,13 +4,13 @@ weather app built with node js, express and ejs templates
 
 
 To run the app, download the zip file, go to the folder and then run
-
+```bash
 npm install
-
+```
 By using this command, all your dependecies will automatically installed.
-
+```bash
     node app.js
-
+```
 This app will run on localhost 3000
 
 ## Landing page
