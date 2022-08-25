@@ -1,4 +1,4 @@
-# Weather app
+# WeatherFusion ©️
 
 weather app built with node js, express and ejs templates
 
