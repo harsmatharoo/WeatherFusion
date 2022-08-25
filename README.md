@@ -2,7 +2,12 @@
 
 weather app built with node js, express and ejs templates
 
+
 To run the app, download the zip file, go to the folder and then run
+
+npm install
+
+By using this command, all your dependecies will automatically installed.
 
     node app.js
 
