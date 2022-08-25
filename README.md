@@ -1,4 +1,4 @@
-# WeatherFusion ©️
+# WeatherFusion⛅☔🌨 ©️
 
 WeatherFusion©️ has been developed using Node.js, Express.js and ejs templates fully.
 
