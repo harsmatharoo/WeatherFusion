@@ -1,6 +1,6 @@
 # WeatherFusion⛅☔🌨 ©️
 
-WeatherFusion©️ has been developed using ** Node.js**, **Express.js** and **ejs** templates fully.
+WeatherFusion©️ has been developed using **Node.js**, **Express.js** and **ejs** templates fully.
 
 Weather freaks can convert temperature between celsius and farenheit, and furthermore also input a wind speed to obtain a real Wind Chill Temperature.
 
