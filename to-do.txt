@@ -1,0 +1,13 @@
+
+- In case image for city cannot be found, display default image
+
+- Add city searching validation (in case city does not exist in openweather database)
+
+- Redesign weather cards
+
+- Add option to remove searched city
+
+- Redesign date and time (functionality should be OK)
+
+- Color palette
+	https://colorhunt.co/palette/2f8f9d3bacb682dbd8b3e8e5

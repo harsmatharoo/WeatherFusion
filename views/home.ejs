@@ -1,0 +1,116 @@
+<%- include("header"); -%>
+<link rel="stylesheet" href="css/home.css">
+<%- include("header2"); -%>
+    <div class="container">
+        <h1 style="color:red; font-size:60px;"class="headingMain"> WeatherFusion© ⛅☔🌨
+        <p style="background-color: black; color:white; font-size:40px;"> Hey there, </p>
+        <%
+         let objtostring = JSON.stringify(firstName)
+        
+       
+        
+         %>
+       
+            <%
+         let str1 = objtostring.replace(/[^0-9]/g, '')
+         let speed = parseInt(str1, 10)
+       
+        
+         %>
+         
+         <%=
+       
+       (objtostring.replace(/[^a-zA-Z0-9 ]/g, '')).replace(/[0-9]/g, '')
+         %>
+        
+        
+        </h1>
+        <div class="dateTime">
+            <h2 id="date"></h2>
+            <h2 id="dayOfWeek"></h2>
+            <h3></h3>
+        </div>
+        <div class="content">
+            <h3 class="subHeading">Search for city:</h3>
+            <form class="searchForm" action="/home" method="post" onsubmit="validateCity(event)">
+                <div style="o margin-top: 0px; display: block;"class="inputCity"><input type="text" name="cityName" placeholder="City Name" autocomplete="off" autofocus></div>
+                <div class="inputSearch"><input type="submit" name="search" value="Search"></div>
+            </form>
+            
+            <% if(error){ %>
+                <p> <%= errorText %> </p>
+            <% } %>
+            <% for (let i=dataLength; i>0; i--){ %>
+            
+                <div class="weatherCard">
+                    <div class="left">
+                        <img class="weatherIcon" src="<%= data[i - 1].icon %>" alt="Weather Icon">
+                        <h1>
+                        
+                            <%= data[i - 1].city %>
+                        </h1>
+                        <ul>
+                            <li style="color:blue; border-style: solid; border-width: 1px; width:180px;">
+                                <%= data[i - 1].temperature %>
+                            </li>
+                            
+                            
+                 <li style="color:blue; border-style: solid; border-width: 1px; font-size:14px; width:180px;"> Feels Like (Wind Chill of <%=speed%> km/h):
+                                <%= (13.12 +
+  0.6215 * (parseInt(data[i - 1].temperature)) -
+  11.37 * speed ** 0.16 +
+  0.3965 * (parseInt(data[i - 1].temperature)) * speed ** 0.16).toFixed(2); %>
+                        °C    </li>            
+                            
+                            
+                            
+                            <li><% if ((parseInt(data[i - 1].temperature)) <= 0){ %>
+<p>Cold!</p>
+<% } else if ((parseInt(data[i - 1].temperature)) >= 20) { %>
+<p>Warm Weather </p>
+<% } 
+
+
+else  { %>
+<p> Mild Weather </p>
+<% }%>
+                            </li>
+                            <li style="color:red; border-style: solid;  border-width: 1px; width:180px;">
+                             
+                                <%=  (((parseInt(data[i - 1].temperature))* 1.8) + 32).toFixed(2)  %> °F
+                            </li>
+                            <li>
+                                <%= data[i - 1].descShort %>
+                            </li>
+                            <li>
+                                <%= data[i - 1].descLong %>
+                            </li> 
+                        </ul>
+                             
+                
+                    </div>
+                      
+                    <div class="right">
+                 
+              
+                      
+                      
+                        <img class="cityImage" src="<%= data[i - 1].imageURL%>" alt="City image">
+                        
+                       
+                    </div>
+                </div>
+              
+                
+                
+                
+            <% } %>
+        </div>
+        <div class="footer">
+        
+        
+            <p style="border-style:solid;">Developed by Harsahib Matharoo</p>
+        </div>
+    </div>
+    <script src="scripts/home.js"></script>
+<%- include("footer"); -%>

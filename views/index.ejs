@@ -1,0 +1,32 @@
+<%- include("header"); -%>
+<link rel="stylesheet" href="css/index.css">
+<%- include("header2"); -%>
+    <div class="loginContent">
+            <h1 style="font-size:50px; background-color:pink;">WeatherFusion © <p style="font-size:50px;"> ⛅☔🌨 </p></h1>
+            <div class="loginWindow">    
+                <h3 class="subHeading">Type your name here:</h3>
+                <form class="loginForm" action="/" method="post" onsubmit="submitForm(event)">
+                    <div class="inputName"><input type="text" name="userName" placeholder="Your Name" autocomplete="off" autofocus></div>
+                    <div class="inputConfirm"><input type="submit" name="submit" value="Confirm"></div>
+                    <p class="or">or</p>
+                    
+                    <h3 class="subHeading">Type wind speed in km/h (Press any Confirm button to proceed):</h3>
+                <form class="loginForm" action="/" method="post" onsubmit="submitForm(event)">
+                    <div class="inputName"><input type="text" name="userName" placeholder="Wind Speed" autocomplete="off" autofocus></div>
+                    <div class="inputConfirm"><input type="submit" name="submit" value="Confirm"></div>
+                    <p class="or">or</p>
+                    
+                    
+                    
+                    
+                    <div class="inputAnonym"><input type="submit" name="submit" value="Continue anonymously"></div>
+                    
+                </form>
+            </div>
+            <span class="footer">
+                <p style="color:blue; border-style:solid;">Developed by Harsahib Matharoo, 2022</p>
+              
+            </span>
+        </div>
+        <script src="scripts/index.js"></script>
+<%- include("footer"); -%>
