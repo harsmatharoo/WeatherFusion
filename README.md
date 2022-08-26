@@ -15,7 +15,7 @@ npm install
 ```
 This following command would allow the app to run on localhost 3000 (local server)
 ```bash
-    node app.js
+node app.js
 ```
 
 
