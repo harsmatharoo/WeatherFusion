@@ -4,7 +4,7 @@ WeatherFusion©️ has been developed using Node.js, Express.js and ejs template
 
 Weather freaks can convert temperature between celsius and farenheit, and furthermore also input a wind speed to obtain a real Wind Chill Temperature.
 
-AccuWeather API integrated to give you accurate weather data.
+OpenWeather API integrated to give you accurate weather data.
 
 
 
@@ -19,23 +19,22 @@ node app.js
 ```
 
 
-## Landing page
+## Index Page
 
-Here you can enter your name
+This initial page allows you to enter your first name.
 
-This page was created mainly for future additions like user authentication
+Furthermore, you can add your own Wind Spped in (km/h) to further calculate the Wind Chill in the next home page.
 
-## Main weather search page
+## Home Page (Main Page)
 
-Weather data is gathered from open weather api
+This Page shows you the weather details about any city that you may search for, using the search bar.
 
-Image is from unsplash, if image for city cannot be found, default image will render
+Image is from unsplash. If an image is not found, then a primary default Image is loaded onto the Weather card.
 
-### City validation
+### City verification and authentication
 
-This app checks if input city is valid city name ( f.e. does not contain numbers ) and checks if it exist in open weather database
+This app can easily confirm if input city that is being searched is a valid city (for example, the name that is searched should not contain numbers or special characters) and checks if the city exists in open weather API.
 
-#### This app was created to better understand how back-end and node js works, because it is often used with React
 
 ![Screenshot from 2022-08-16 00-32-38](https://user-images.githubusercontent.com/84873873/186787336-35310d4e-cc1e-4b15-b632-e04d6d593ef4.png)
 ![Screenshot from 2022-08-16 00-31-49](https://user-images.githubusercontent.com/84873873/186787743-6973f706-998e-4c01-98ef-7d6cd64ba305.png)
