@@ -35,6 +35,7 @@ Image is from unsplash. If an image is not found, then a primary default Image i
 
 This app can easily confirm if input city that is being searched is a valid city (for example, the name that is searched should not contain numbers or special characters) and checks if the city exists in open weather API.
 
+![Screenshot from 2022-08-25 21-23-43](https://user-images.githubusercontent.com/84873873/186808517-9a5bbfe2-01ca-4825-a83a-b231772a9b24.png)
 
 ![Screenshot from 2022-08-16 00-32-38](https://user-images.githubusercontent.com/84873873/186787336-35310d4e-cc1e-4b15-b632-e04d6d593ef4.png)
 ![Screenshot from 2022-08-16 00-31-49](https://user-images.githubusercontent.com/84873873/186787743-6973f706-998e-4c01-98ef-7d6cd64ba305.png)
