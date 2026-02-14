@@ -1,5 +1,8 @@
 # WeatherFusion⛅☔🌨 ©️
 
+<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/1b47095c-d9f4-4e52-b727-329955cbf3ee" />
+
+
 WeatherFusion©️ has been developed using **Node.js**, **Express.js** and **ejs** templates fully.
 
 Weather freaks can convert temperature between celsius and farenheit, and furthermore also input a wind speed to obtain a real Wind Chill Temperature.
